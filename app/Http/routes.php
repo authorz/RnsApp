@@ -19,3 +19,49 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::group(['prefix'=>'admin'],function()
+{
+
+	Route::get('login',[
+		'uses'=>'Admin\LoginController@index'
+	]);
+
+	Route::get('coder',[
+		'uses'=>'Admin\LoginController@coder'
+	]);
+
+	Route::get('index',[
+		'uses'=>'Admin\IndexController@index'
+	]);
+
+	Route::group(['prefix'=>'public'],function(){
+
+//		Route::get('menu',[
+//			'uses'=>'Admin\PublicController@menu'
+//		]);
+
+	});
+
+	Route::group(['prefix'=>'module'],function(){
+		Route::get('index',[
+			'uses'=>'Admin\ModuleController@index'
+		]);
+	});
+
+
+
+});
+
+// 后台模块路由
+Route::group(['prefix'=>'admin'],function() {
+	Route::group(['prefix' => 'extension'], function () {
+		include_once 'ModuleRoutes.php';
+	});
+});
+
+// 接口路由
+Route::group(['prefix'=>'api'],function() {
+		include_once 'ApiRoutes.php';
+});
