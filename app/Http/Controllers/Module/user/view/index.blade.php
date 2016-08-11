@@ -1,20 +1,38 @@
 @extends('admin.default.template.basic')
 @section('app-content')
-    <button type="button" class="btn btn-primary" style="margin: 15px">上传模块(要求.zip 格式)</button>
-    <div class="row" style="margin-top: 10px">
-        <div class="col-sm-6 col-md-2">
-            <div class="thumbnail">
-                <img src="/admin/img/a0.jpg" alt="...">
-                <div class="caption">
-                    <h3>module</h3>
-                    <p>这是解释干什么的</p>
-                    <p>
-                        <a href="#" class="btn btn-primary" role="button">安装</a>
-                        <a href="#" class="btn btn-default" role="button">查看</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+    <table class="table table-bordered" style="background: #ffffff">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
 
-    </div>
 @stop

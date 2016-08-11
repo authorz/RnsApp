@@ -2,7 +2,7 @@
     "author":"test",
     "version":"1.0",
     "module":"user",
-    "title":"用户",
+    "title":"用户模块",
     "cover":"cover.png",
     "describe":"这是一个用户管理模块的demo",
     "list":{
@@ -11,7 +11,7 @@
         "menu":{
             "0":{
                 "name":"用户管理",
-                "url":"user_management",
+                "url":"index",
                 "permissions":{
                     "r":4,
                     "w":2,
@@ -22,9 +22,9 @@
                 "name":"添加用户",
                 "url":"user_management",
                 "permissions":{
-                "r":4,
-                "w":2,
-                "x":1
+                    "r":4,
+                    "w":2,
+                    "x":1
                 }
             }
         }

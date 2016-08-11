@@ -38,9 +38,29 @@ Route::group(['prefix'=>'admin'],function()
 
 	Route::group(['prefix'=>'public'],function(){
 
-//		Route::get('menu',[
-//			'uses'=>'Admin\PublicController@menu'
-//		]);
+		Route::get('menu',[
+			'uses'=>'Admin\PublicController@menu'
+		]);
+
+		Route::get('header',[
+			'uses'=>'Admin\PublicController@header'
+		]);
+
+		Route::get('app',[
+			'uses'=>'Admin\PublicController@app'
+		]);
+
+		Route::get('aside',[
+			'uses'=>'Admin\PublicController@aside'
+		]);
+
+		Route::get('nav',[
+			'uses'=>'Admin\PublicController@nav'
+		]);
+
+		Route::get('settings',[
+			'uses'=>'Admin\PublicController@settings'
+		]);
 
 	});
 

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/admin/css/simple-line-icons.css" type="text/css" />
     <link rel="stylesheet" href="/admin/css/font.css" type="text/css" />
     <link rel="stylesheet" href="/admin/css/app.css" type="text/css" />
+    <script src="/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/plugin/layer/layer.js"></script>
 </head>
 <body>
 
@@ -28,6 +30,7 @@
 
     <!-- content -->
     <div class="app-content">
+
         @section('app-content')
 
         @show
@@ -43,7 +46,7 @@
             <!-- / footer -->
 </div>
 <!-- jQuery -->
-<script src="/admin/vendor/jquery/jquery.min.js"></script>
+
 <script src="/admin/vendor/jquery/bootstrap.js"></script>
 <script type="text/javascript">
     +function ($) {
