@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-    'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'CreateSystemConfigTable' => $baseDir . '/database/migrations/2016_08_22_083855_create_system_config_table.php',
+    'CreateSystemMenuTable' => $baseDir . '/database/migrations/2016_08_22_083845_create_system_menu_table.php',
+    'CreateUserGroupTable' => $baseDir . '/database/migrations/2016_08_22_083833_create_user_group_table.php',
+    'CreateUsersTable' => $baseDir . '/database/migrations/2016_08_22_021500_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
@@ -424,4 +426,5 @@ return array(
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/Text/Template.php',
+    'UserTableSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
 );

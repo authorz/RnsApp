@@ -8,9 +8,9 @@
     </button>
     <!-- brand -->
     <a href="#/" class="navbar-brand text-lt">
-        <i class="fa fa-btc"></i>
+        <i class="fa  icon-social-dribbble"></i>
         <img src="/admin/img/logo.png" alt="." class="hide">
-        <span class="hidden-folded m-l-xs">@{{app.name}}</span>
+        <span class="hidden-folded m-l-xs">RnsApps</span>
     </a>
     <!-- / brand -->
 </div>
@@ -190,12 +190,18 @@
         <li class="hidden-xs">
             <a ui-fullscreen></a>
         </li>
+        <li>
+            <a ui-sref="lock">
+                <i class="icon-lock"></i>
+            </a>
+        </li>
         <li class="dropdown" dropdown>
             <a href class="dropdown-toggle" dropdown-toggle>
                 <i class="icon-bell fa-fw"></i>
                 <span class="visible-xs-inline">Notifications</span>
                 <span class="badge badge-sm up bg-danger pull-right-xs">2</span>
             </a>
+
             <!-- dropdown -->
             <div class="dropdown-menu w-xl animated fadeInUp">
                 <div class="panel bg-white">
@@ -233,7 +239,7 @@
                 <img src="img/a0.jpg" alt="...">
                 <i class="on md b-white bottom"></i>
               </span>
-                <span class="hidden-sm hidden-md">John.Smith</span> <b class="caret"></b>
+                <span class="hidden-sm hidden-md">{{ Session::get('username') }}</span> <b class="caret"></b>
             </a>
             <!-- dropdown -->
             <ul class="dropdown-menu animated fadeInRight w">
@@ -260,7 +266,7 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a ui-sref="access.signin">Logout</a>
+                    <a href="/admin/login">Logout</a>
                 </li>
             </ul>
             <!-- / dropdown -->

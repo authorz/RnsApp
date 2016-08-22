@@ -16,3 +16,27 @@ angular.module('app', [
     'oc.lazyLoad',
     'pascalprecht.translate'
 ]);
+
+function formController($scope, $http) {
+
+
+
+    // create a blank object to hold our form information
+
+    // $scope will allow this to pass between controller and view
+
+    $scope.formData = {};
+
+
+
+    // process the form
+
+    $scope.processForm = function() {
+
+
+
+    };
+
+
+
+}

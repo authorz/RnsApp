@@ -48,6 +48,10 @@ angular.module('app')
                   url: '/ui',
                   template: '<div ui-view class="fade-in-up"></div>'
               })
+              .state('app.user', {
+                  url: '/user',
+                  templateUrl: '/admin/extension/user/index',
+              })
               .state('app.ui.buttons', {
                   url: '/buttons',
                   templateUrl: 'tpl/ui_buttons.html'

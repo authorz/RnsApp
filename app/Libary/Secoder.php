@@ -3,6 +3,7 @@ namespace App\Libary;
 
 use App\Libary\Contracts\Secoder\SecoderInterface;
 use App\Http\Requests\Request;
+use Illuminate\Support\Facades\Session;
 /**
  * code
  * User: crazy
@@ -92,9 +93,13 @@ class Secoder implements SecoderInterface{
         }
 
         // 保存验证码
-        isset($_SESSION) || session_start();
-        $_SESSION[self::$seKey]['code'] = join('', $code); // 把校验码保存到session
-        $_SESSION[self::$seKey]['time'] = time();  // 验证码创建时间
+        //isset($_SESSION) || session_start();
+
+
+        Session::put('code',join('', $code));
+
+        //$_SESSION[self::$seKey]['code'] = join('', $code); // 把校验码保存到session
+        //$_SESSION[self::$seKey]['time'] = time();  // 验证码创建时间
 
         header('Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate');
         header('Cache-Control: post-check=0, pre-check=0', false);

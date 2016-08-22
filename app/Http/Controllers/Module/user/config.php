@@ -7,11 +7,11 @@
     "describe":"这是一个用户管理模块的demo",
     "list":{
         "name":"User",
-        "icon":"glyphicon-edit",
+        "icon":"icon-user-follow",
         "menu":{
             "0":{
                 "name":"用户管理",
-                "url":"index",
+                "url":"app.user",
                 "permissions":{
                     "r":4,
                     "w":2,
@@ -26,6 +26,15 @@
                     "w":2,
                     "x":1
                 }
+            },
+            "2":{
+                "name":"数据统计",
+                "url":"user_management",
+                "permissions":{
+                    "r":4,
+                    "w":2,
+                    "x":1
+                    }
             }
         }
     },

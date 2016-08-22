@@ -6,12 +6,16 @@
  * Time: 10:55
  */
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Admin\AdminController;
 
-class IndexController extends Controller{
+class IndexController extends AdminController{
 
     public function index(){
         return view('/admin/default/index');
+    }
+
+    public function dashboard(){
+        return view('/admin/default/dashboard');
     }
 
 }

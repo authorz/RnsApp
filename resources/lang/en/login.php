@@ -19,4 +19,6 @@ return [
     'canvas_error'=>'对不起，您的浏览器不支持canvas，请下载最新版浏览器!',
     'dologin'=>'立即登陆',
 
+    'error'=>'非法请求',
+
 ];
