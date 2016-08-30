@@ -72,7 +72,7 @@
         </a>
     </li>
     <li>
-        <a ui-sref="app.docs">
+        <a ui-sref="app.module">
             <i class="icon-question icon"></i>
             <span>Module</span>
         </a>

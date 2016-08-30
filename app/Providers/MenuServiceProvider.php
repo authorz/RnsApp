@@ -13,7 +13,7 @@ class MenuServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		
+
 		view()->share('menu', $this->module());
 	}
 
@@ -36,9 +36,16 @@ class MenuServiceProvider extends ServiceProvider {
 		foreach($module as $key=>$value){
 			$contents = json_decode(Storage::get($value.'/config.php'),true);
 			$module[$key] = $contents;
+
+			$module[$key]['lock'] = $this->exists($contents['module']);
+
 		}
 
 		return $module;
 	}
 
+
+	public function exists($module){
+
+	}
 }

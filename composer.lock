@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "9dde894866d7d6d9e7db7f0c2142043b",
+    "content-hash": "60c1ec7a5b9233d0f54b8285df0e1837",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -826,6 +827,124 @@
             "time": "2015-01-18 11:29:59"
         },
         {
+            "name": "pili-engineering/pili-sdk-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pili-engineering/pili-sdk-php.git",
+                "reference": "2f6692f62dc1b6f4c5d494ff4393c5fd8c058b57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/pili-engineering/pili-sdk-php/2f6692f62dc1b6f4c5d494ff4393c5fd8c058b57.zip",
+                "reference": "2f6692f62dc1b6f4c5d494ff4393c5fd8c058b57",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pili": "lib/",
+                    "Qiniu": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pili Engineering",
+                    "homepage": "https://github.com/pili-engineering"
+                }
+            ],
+            "description": "Pili Streaming Cloud server-side library for PHP.",
+            "homepage": "https://github.com/pili-engineering/pili-sdk-php",
+            "keywords": [
+                "cloud",
+                "dash",
+                "hdl",
+                "hds",
+                "hls",
+                "pili",
+                "qiniu",
+                "rtmp",
+                "streaming",
+                "web-service"
+            ],
+            "time": "2016-06-30 14:33:07"
+        },
+        {
+            "name": "pili-engineering/pili-sdk-php.v2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pili-engineering/pili-sdk-php.v2.git",
+                "reference": "bdfe8ba96597bc86fcf11c5db4036cff011be4e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/pili-engineering/pili-sdk-php.v2/bdfe8ba96597bc86fcf11c5db4036cff011be4e1.zip",
+                "reference": "bdfe8ba96597bc86fcf11c5db4036cff011be4e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Qiniu": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pili Engineering",
+                    "homepage": "https://github.com/pili-engineering"
+                }
+            ],
+            "description": "Pili Streaming Cloud Server-Side Library For PHP.",
+            "homepage": "https://github.com/pili-engineering/pili-sdk-php.v2",
+            "keywords": [
+                "cloud",
+                "dash",
+                "flv",
+                "hdl",
+                "hds",
+                "hls",
+                "pili",
+                "qiniu",
+                "rtmp",
+                "streaming",
+                "web-service"
+            ],
+            "time": "2016-08-12 10:00:15"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -992,7 +1111,7 @@
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console.git",
+                "url": "https://github.com/symfony/console.git",
                 "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34"
             },
             "dist": {
@@ -1049,7 +1168,7 @@
             "target-dir": "Symfony/Component/Debug",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Debug.git",
+                "url": "https://github.com/symfony/debug.git",
                 "reference": "150c80059c3ccf68f96a4fceb513eb6b41f23300"
             },
             "dist": {
@@ -1109,7 +1228,7 @@
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
                 "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813"
             },
             "dist": {
@@ -1167,7 +1286,7 @@
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
+                "url": "https://github.com/symfony/filesystem.git",
                 "reference": "a1f566d1f92e142fa1593f4555d6d89e3044a9b7"
             },
             "dist": {
@@ -1261,7 +1380,7 @@
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpFoundation.git",
+                "url": "https://github.com/symfony/http-foundation.git",
                 "reference": "8fa63d614d56ccfe033e30411d90913cfc483ff6"
             },
             "dist": {
@@ -1314,7 +1433,7 @@
             "target-dir": "Symfony/Component/HttpKernel",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpKernel.git",
+                "url": "https://github.com/symfony/http-kernel.git",
                 "reference": "27abf3106d8bd08562070dd4e2438c279792c434"
             },
             "dist": {
@@ -1438,7 +1557,7 @@
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Routing.git",
+                "url": "https://github.com/symfony/routing.git",
                 "reference": "bda1c3c67f2a33bbeabb1d321feaf626a0ca5698"
             },
             "dist": {
@@ -2795,7 +2914,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pili-engineering/pili-sdk-php.v2": 20,
+        "pili-engineering/pili-sdk-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

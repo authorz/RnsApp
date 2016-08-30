@@ -12,6 +12,7 @@ use App\Libary\Contracts\Secoder\SecoderInterface;
 use Illuminate\Http\Request;
 use App\Model\Login;
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Storage;
 
 
 class LoginController extends Controller{
@@ -20,6 +21,7 @@ class LoginController extends Controller{
 
     public function index(){
 
+        
         return view('/admin/default/login');
     }
 

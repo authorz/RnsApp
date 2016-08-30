@@ -14,6 +14,7 @@
         <script src="/js/Particleground.js" tppabs="js/Particleground.js"></script>
     </head>
     <body>
+    <a href="{{ base_path() }}/README.md">README.md</a>
         <form name="login" method="get" id="login">
             <dl class="admin_login">
                 <dt>

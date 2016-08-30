@@ -46,34 +46,18 @@ Route::group(['prefix'=>'admin'],function()
 	]);
 
 	Route::group(['prefix'=>'public'],function(){
+		include_once 'Routes/Admin/Public.php';
+	});
 
-		Route::get('menu',[
-			'uses'=>'Admin\PublicController@menu'
+
+	Route::group(['prefix'=>'group'],function(){
+		Route::get('user/index',[
+			'uses'=>'Admin\UserController@user_index',
 		]);
-
-		Route::get('header',[
-			'uses'=>'Admin\PublicController@header'
-		]);
-
-		Route::get('app',[
-			'uses'=>'Admin\PublicController@app'
-		]);
-
-		Route::get('aside',[
-			'uses'=>'Admin\PublicController@aside'
-		]);
-
-		Route::get('nav',[
-			'uses'=>'Admin\PublicController@nav'
-		]);
-
-		Route::get('settings',[
-			'uses'=>'Admin\PublicController@settings'
-		]);
-
 
 
 	});
+
 
 
 	Route::group(['prefix'=>'system'],function(){

@@ -43,12 +43,14 @@ angular.module('app')
 
               .state('app.system.config', {
                   url: '/config',
+                  cache:'true',
                   templateUrl: '/admin/system/system_config',
               })
 
               .state('app.system.menu', {
                   url: '/menu',
                   templateUrl: '/admin/system/system_menu',
+                  cache:'true',
                   resolve: {
                       deps: ['uiLoad',
                           function( uiLoad ){
@@ -90,15 +92,17 @@ angular.module('app')
 
               })
 
-              .state('app.user', {
-                  url: '/user',
-                  templateUrl: '/admin/extension/user/index',
 
-              })
 
               .state('app.docs', {
                   url: '/docs',
                   templateUrl: '/admin/docs',
+
+              })
+
+              .state('app.module', {
+                  url: '/module',
+                  templateUrl: '/admin/module/index',
 
               })
 
@@ -107,6 +111,20 @@ angular.module('app')
                   templateUrl: '/admin/lock',
 
               })
+
+
+              .state('app.user', {
+                  url: '/user',
+                  templateUrl:'/admin/group/user/index',
+
+              })
+
+              .state('app.user.list',{
+                  url:'/list',
+                  templateUrl:'/admin/group/user_index',
+              })
+
+
       }
     ]
   );

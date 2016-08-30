@@ -48,6 +48,7 @@ return [
 			'root'   => '/cater/test/app',
 		],
 
+
 		's3' => [
 			'driver' => 's3',
 			'key'    => 'your-key',
