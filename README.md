@@ -1,5 +1,12 @@
 <img src="http://immobiliare.github.io/ApnsPHP/images/logo.png" width="48"> RnsApp App is developed by Laravel & Angularjs
 ------
+why RnsApp ?
+------
+System deployment app background management system, reasonable deployment file, decoupling design, code, no longer extend difficulties, truly achieve the MVC separation, RnsApp is divided into three parts
+＊1、App background management system
+＊2、App front-end display page
+＊3、Interface monitoring system
+RnsApp also includes all kinds of interface debugging tools, safety inspection.
 Project Dir !
 ------
 ```shell
