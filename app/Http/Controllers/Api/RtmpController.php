@@ -12,16 +12,28 @@ use App\Libary\Other\Qiniu;
 
 
 
-
 class RtmpController extends Controller{
 
-    use Qiniu\Qiniu;
+    use Qiniu\QiniuV2;
 
-    public function publish_url(){
+    /**
+     * 推流
+     *
+     * return json
+     */
+    public function publish_url_v2(){
 
         self::_initialize();
 
-        return self::$client->getStream('z1.cater.22312')->toJSONString();
+        $url = self::publish_url('22312');
+
+        return response()->json([
+            'status'=>200,
+            'return'=>[
+                'url'=>$url,
+            ],
+        ]);
+
 
     }
 }

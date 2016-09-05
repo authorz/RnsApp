@@ -3,6 +3,7 @@ namespace App\Libary\Contracts\Menu;
 
 use Illuminate\Support\Facades\DB;
 
+
 trait MenuReturn{
     public static function getMenu($id = 0){
 

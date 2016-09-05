@@ -38,6 +38,16 @@ trait Qiniu{
         return new Credentials(self::$config['accessKey'],self::$config['secretKey']);
     }
 
+    //    use Qiniu\Qiniu;
+    //
+    //    调用方法
+    //    public function publish_url(){
+    //
+    //        self::_initialize();
+    //
+    //        return self::$client->getStream('z1.cater.22312')->toJSONString();
+    //
+    //    }
 
 
 }

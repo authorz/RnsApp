@@ -7,11 +7,15 @@
  */
 
 
+
 use App\Libary\Contracts\Menu\MenuReturn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
+
 class Menu extends Model{
 
     use MenuReturn;
+
+
 }

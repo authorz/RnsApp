@@ -7,16 +7,19 @@
  */
 
 use App\Http\Controllers\Controller;
+
 use App\Model\Menu;
 use Illuminate\Support\Facades\Request;
 
 
 class MenuController extends Controller{
 
+
     protected static $templatePath = '/admin/default/system/menu/';
 
 
     public function get_left_menu(){
+
         return Menu::getMenu(0);
     }
 
